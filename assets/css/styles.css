@@ -3,13 +3,13 @@ body {
   font-size: 120%;
 }
 
-/* accent link on hover */
 a {
   color: #563d7c;
   text-decoration: none;
   transition: color 0.1s;
 }
 
+/* accent link on hover */
 a:hover {
   color: #8570a5;
 }
@@ -45,7 +45,8 @@ ol {
   max-height: 400px;
   overflow: auto;
 }
- /* added border radius */
+
+/* added border radius to li */
 li {
   background-color: purple;
   margin-top: 10px;
@@ -57,11 +58,18 @@ li {
   list-style: decimal inside none;
 }
 
+#createDivCorrect {
+ color: green; 
+}
+
+#createDivIncorrect {
+  color: red; 
+ }
+
 /* highlight li on hover */
 li:hover {
   background-color: #f3edfc;
   color: black;
-
 }
 
 .wrapper {
