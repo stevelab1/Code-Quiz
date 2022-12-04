@@ -3,6 +3,7 @@ body {
   font-size: 120%;
 }
 
+/* accent link on hover */
 a {
   color: #563d7c;
   text-decoration: none;
@@ -26,6 +27,7 @@ button {
   transition: background-color 0.1s;
 }
 
+/* accent button on hover */
 button:hover {
   background-color: #8570a5;
 }
@@ -43,14 +45,23 @@ ol {
   max-height: 400px;
   overflow: auto;
 }
-
+ /* added border radius */
 li {
-  padding: 5px;
+  background-color: purple;
+  margin-top: 10px;
+  padding: 5px 15px;
+  width: 80%;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
   list-style: decimal inside none;
 }
 
-li:nth-child(odd) {
+/* highlight li on hover */
+li:hover {
   background-color: #f3edfc;
+  color: black;
+
 }
 
 .wrapper {
