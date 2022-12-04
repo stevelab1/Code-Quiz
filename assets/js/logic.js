@@ -63,10 +63,13 @@ function compare(event) {
 
   if (element.matches("li")) {
     var createDiv = document.createElement("div");
-
+   
     // Correct
     if (element.textContent == questions[questionIndex].answer) {
     createDiv.setAttribute("id", "createDivCorrect");
+    setTimeout(() => {
+        createDivCorrect.style.display = 'none';
+      }, 1000); // 👈️ time in milliseconds
 
       score++;
       createDiv.textContent =
@@ -74,6 +77,9 @@ function compare(event) {
     // Incorrect
     } else {
     createDiv.setAttribute("id", "createDivIncorrect");
+    setTimeout(() => {
+        createDivIncorrect.style.display = 'none';
+      }, 1000); // 👈️ time in milliseconds
 
       // Will deduct -10 seconds off secondsRemain for wrong answers
       secondsRemain = secondsRemain - penalty;

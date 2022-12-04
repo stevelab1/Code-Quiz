@@ -58,6 +58,12 @@ li {
   list-style: decimal inside none;
 }
 
+#createDiv {
+  margin-top: 30px; 
+  font-weight: bold;
+  font-style: italic;
+ }
+
 #createDivCorrect {
  color: green; 
 }
