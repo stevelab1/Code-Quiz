@@ -24,7 +24,7 @@ startQuiz.addEventListener("click", function () {
 
       if (secondsRemain <= 0) {
         clearInterval(interval);
-        allDone();
+        // allDone();
         timer.textContent = "Time: 0s";
       }
     }, 1000);
