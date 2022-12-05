@@ -63,27 +63,28 @@ function compare(event) {
 
   if (element.matches("li")) {
     var createDiv = document.createElement("div");
-   
+
     // Correct
     if (element.textContent == questions[questionIndex].answer) {
-    createDiv.setAttribute("id", "createDivCorrect");
-    setTimeout(() => {
-        createDivCorrect.style.display = 'none';
+      createDiv.setAttribute("id", "createDivCorrect");
+      setTimeout(() => {
+        createDivCorrect.style.display = "none";
       }, 1000); // 👈️ time in milliseconds
 
       score++;
       createDiv.textContent =
         "Correct! The answer is:  " + questions[questionIndex].answer;
-    // Incorrect
+      // Incorrect
     } else {
-    createDiv.setAttribute("id", "createDivIncorrect");
-    setTimeout(() => {
-        createDivIncorrect.style.display = 'none';
+      createDiv.setAttribute("id", "createDivIncorrect");
+      setTimeout(() => {
+        createDivIncorrect.style.display = "none";
       }, 1000); // 👈️ time in milliseconds
 
-      // Will deduct -10 seconds off secondsRemain for wrong answers
+      // Deduct 10 seconds for wrong answers
       secondsRemain = secondsRemain - penalty;
-      createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
+      createDiv.textContent =
+        "Wrong! The correct answer is:  " + questions[questionIndex].answer;
     }
   }
   // Increment questions and check for quiz end condition, then end when met
