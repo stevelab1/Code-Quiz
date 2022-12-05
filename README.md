@@ -36,7 +36,10 @@ The following animation demonstrates the application functionality:
 
 Quiz inspired by challenge to reproduce appearance and functionality of the above gif by edX Boot Camps LLC.
 
-### Deployment
+## Screenshot
+![Screenshot of code quiz.](./assets/Screenshot.png)
+
+## Deployment
 
 - Application deployed at (live URL)
 
