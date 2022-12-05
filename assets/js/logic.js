@@ -68,8 +68,8 @@ function compare(event) {
     if (element.textContent == questions[questionIndex].answer) {
       createDiv.setAttribute("id", "createDivCorrect");
       setTimeout(() => {
-        createDivCorrect.style.display = "none";
-      }, 1000); // 👈️ time in milliseconds
+        createDiv.style.display = "none";
+      }, 1000); // time in milliseconds
 
       score++;
       createDiv.textContent =
@@ -78,8 +78,8 @@ function compare(event) {
     } else {
       createDiv.setAttribute("id", "createDivIncorrect");
       setTimeout(() => {
-        createDivIncorrect.style.display = "none";
-      }, 1000); // 👈️ time in milliseconds
+        createDiv.style.display = "none";
+      }, 1000); // milliseconds
 
       // Deduct 10 seconds for wrong answers
       secondsRemain = secondsRemain - penalty;
@@ -92,6 +92,9 @@ function compare(event) {
 
   if (questionIndex >= questions.length) {
     createDiv.setAttribute("id", "createDiv");
+    setTimeout(() => {
+      createDiv.style.display = "none";
+    }, 1000); 
 
     allDone();
     createDiv.textContent =
