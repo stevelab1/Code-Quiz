@@ -94,7 +94,7 @@ function compare(event) {
     createDiv.setAttribute("id", "createDiv");
     setTimeout(() => {
       createDiv.style.display = "none";
-    }, 1000); 
+    }, 1000);
 
     allDone();
     createDiv.textContent =
@@ -178,7 +178,7 @@ function allDone() {
       var newScore = JSON.stringify(allScores);
       localStorage.setItem("allScores", newScore);
       // Replace index with HighScores html document
-      window.location.replace("./HighScores.html");
+      window.location.replace("./highscores.html");
     }
   });
 }
