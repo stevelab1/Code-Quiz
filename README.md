@@ -41,8 +41,10 @@ Quiz inspired by challenge to reproduce appearance and functionality of the abov
 
 ## Deployment
 
-- Application deployed at (live URL)
+Application deployed at:
+ https://stevelab1.github.io/Code-Quiz/
 
 GitHub URL:
+ https://github.com/stevelab1/Code-Quiz
 
 ---
